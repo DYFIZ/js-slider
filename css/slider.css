@@ -1,0 +1,47 @@
+.gallery{
+    position: relative;
+    display: flex;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto; 
+}
+.photo{
+    position: relative;
+    width: 400px;
+}
+
+.photo img{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    transition: opacity 1s;
+    height: 200px;
+}
+
+.photo img.shown{
+     opacity: 1;
+}
+
+.tabs{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 500px;
+    text-align: center;
+    margin-left:-50px;
+}
+
+.tabs img{
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    margin: 10px;
+}
+
+.prev, .next{
+    width: 50px;
+    background-color: #ebf1f1;
+    border-radius: 50%;
+    height: 50px;
+    margin: 75px 0px;
